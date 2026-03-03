@@ -1,0 +1,153 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "AT Protocol",
+  "projectDescription": "TypeScript SDK and reference implementation for the AT Protocol decentralized social networking protocol",
+  "theme": "aspen",
+  "primaryColor": "#1185FE",
+  "lightColor": "#68B5FB",
+  "darkColor": "#0A5BBF",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/protocol-overview",
+              "concepts/identity",
+              "concepts/lexicons",
+              "concepts/repositories",
+              "concepts/federation"
+            ]
+          },
+          {
+            "group": "Client SDK",
+            "pages": [
+              "client/agent",
+              "client/authentication",
+              "client/sessions",
+              "client/api-calls",
+              "client/rich-text",
+              "client/moderation"
+            ]
+          },
+          {
+            "group": "Server SDK",
+            "pages": [
+              "server/overview",
+              "server/xrpc-server",
+              "server/pds",
+              "server/appview"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/creating-posts",
+              "examples/social-graph",
+              "examples/feeds",
+              "examples/custom-lexicons"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/oauth",
+              "advanced/self-hosting",
+              "advanced/contributing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK Reference",
+        "groups": [
+          {
+            "group": "Client Libraries",
+            "pages": [
+              "sdk/api",
+              "sdk/xrpc",
+              "sdk/common-web"
+            ]
+          },
+          {
+            "group": "Protocol Primitives",
+            "pages": [
+              "sdk/lexicon",
+              "sdk/syntax",
+              "sdk/identity",
+              "sdk/did",
+              "sdk/crypto",
+              "sdk/repo"
+            ]
+          },
+          {
+            "group": "Server Libraries",
+            "pages": [
+              "sdk/xrpc-server",
+              "sdk/pds-package",
+              "sdk/bsky-package"
+            ]
+          },
+          {
+            "group": "OAuth",
+            "pages": [
+              "sdk/oauth-client",
+              "sdk/oauth-client-node",
+              "sdk/oauth-client-browser",
+              "sdk/oauth-provider"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "sdk/common",
+              "sdk/aws",
+              "sdk/sync"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "TypeScript client library for ATProto and Bluesky",
+    "OAuth-based authentication and session management",
+    "Lexicon schema definition language",
+    "DID and handle resolution",
+    "Cryptographic signing and verification",
+    "Repository data structures with MST",
+    "XRPC HTTP API client and server",
+    "Personal Data Server (PDS) implementation",
+    "Bluesky AppView implementation",
+    "Rich text parsing and rendering",
+    "Content moderation system"
+  ],
+  "publicApiSurface": [
+    "@atproto/api - Agent",
+    "@atproto/api - RichText",
+    "@atproto/api - moderatePost",
+    "@atproto/oauth-client - OAuthClient",
+    "@atproto/oauth-client-node - NodeOAuthClient",
+    "@atproto/oauth-client-browser - BrowserOAuthClient",
+    "@atproto/lexicon - Lexicons",
+    "@atproto/identity - IdResolver",
+    "@atproto/crypto - Keypair",
+    "@atproto/repo - Repo",
+    "@atproto/xrpc - XrpcClient",
+    "@atproto/xrpc-server - createServer",
+    "@atproto/syntax - AtUri",
+    "@atproto/did - DidResolver",
+    "@atproto/pds - PDS",
+    "@atproto/bsky - AppView"
+  ]
+}
